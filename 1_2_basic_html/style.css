@@ -5,7 +5,7 @@ body {
   padding: 1em;
 }
 
-h1 {
+h2 {
   font-size: 3em;
   margin: 0.25em 0;
 }
@@ -15,6 +15,15 @@ h3 {
   margin: 0.25em 0;
 }
 
+h4 {
+  font-size: 1em;
+  margin: 0.50em 0;
+}
+
 p {
   font-size: 1em;
+}
+
+td{
+  border: 1px solid black;
 }
