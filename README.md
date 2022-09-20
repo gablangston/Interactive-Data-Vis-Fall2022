@@ -22,3 +22,4 @@ Code for each tutorial will be released on the week that we cover that topic. Th
 | Section 3 | Tutorial 3 | Timeseries | [/tree/main](https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2022/tree/main/3_3_time_series) | `/tree/demo` | `/tree/class`
 | Section 3 | Tutorial 4 | Geographic | [/tree/main](https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2022/tree/main/3_4_geographic) | `/tree/demo` | `/tree/class`
 | Section 3 | Tutorial 6 | Hierarchical | [/tree/main](https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2022/tree/main/3_5_hierarchical) | `/tree/demo` | `/tree/class`
+# gablangston.github.io
