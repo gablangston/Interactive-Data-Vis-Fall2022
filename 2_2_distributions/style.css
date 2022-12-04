@@ -17,3 +17,12 @@ h3 {
 p {
   font-size: 1em;
 }
+
+.bubble {
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+}
+
+.team-labels{
+  font-size: 14px;
+}

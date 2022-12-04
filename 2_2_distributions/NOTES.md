@@ -1,14 +1,14 @@
 ## NOTES
 
 -----------
-INSTRUCTIONS:
-Use this markdown file to keep track of open questions/challenges from this week's assignment.
-- What did you have trouble solving?
-- What went easier than expected?
-- What, if anything, is currently blocking you?
+In this tutorial, I attempted to use the environmental ratings json file 
+provided. The three variables I wanted to focus on are: ideologyScore2020, 
+envScore2020 and envScoreLifetime.
 
-Sometimes it helps to formulate what you understood and where you got stuck in order to move forward. Feel free to include `code snippets`, `screenshots`, and `error message text` here as well.
+I wanted to visualize if there is a correlation between the 2020 ideology score
+(x axis) and the lifetime environmental score (y axis) with the size of the dots
+being the 2020 environmental score.
 
-If you find you're not able complete this week's assignment, reflecting on where you are getting stuck here will help you get full credit for this week's tutorial
-
+Unfortunately I am only able to visualize the x axis and after troubleshooting 
+both the js and css files, can't figure out what I am missing.
 ------------
