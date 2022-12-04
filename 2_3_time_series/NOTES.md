@@ -1,14 +1,16 @@
 ## NOTES
 
 -----------
-INSTRUCTIONS:
-Use this markdown file to keep track of open questions/challenges from this week's assignment.
-- What did you have trouble solving?
-- What went easier than expected?
-- What, if anything, is currently blocking you?
+For this tutorial, I utilized a variety of guides, but mainly Matt Layman's 
+A "simple" D3.js area chart: https://www.mattlayman.com/blog/2015/d3js-area-chart/
+and d3noob's Simple graph with filled area in v7: 
+https://bl.ocks.org/d3noob/09d3a1416d4c5c9da6eb1c7e63efff9d'.
 
-Sometimes it helps to formulate what you understood and where you got stuck in order to move forward. Feel free to include `code snippets`, `screenshots`, and `error message text` here as well.
+The place where I am stuck is producing the actual graph. I've doubled check the js
+and css files to ensure that the line and areas are defined, but unfortunately I am 
+unable to produce a graph.
 
-If you find you're not able complete this week's assignment, reflecting on where you are getting stuck here will help you get full credit for this week's tutorial
+I ensured to leave comments throughout the js file, but am stumped as to what
+I'm missing.
 
 ------------
