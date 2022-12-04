@@ -7,13 +7,15 @@ const width = window.innerWidth * 0.9,
  * LOAD DATA
  * Using a Promise.all([]), we can load more than one dataset at a time
  * */
+
+// HOW TO ADD IN ADDITIONAL DATASET?
  Promise.all([
   d3.json("../data/usState.json"),
   d3.csv("../data/usHeatExtremes.csv", d3.autoType),
 ]).then(([geojson, heat]) => {
   console.log('heat', heat)
 
-   // CREATE SVGS
+   // CREATE SVGS AND ACCOMPANYING TEXT
   const svg = d3.select("#container")
   .append("svg")
   .attr("width", width)
@@ -23,7 +25,7 @@ const width = window.innerWidth * 0.9,
   .attr("x", (width / 2))             
   .attr("y", margin.top)
   .attr("text-anchor", "middle")  
-  .style("font-size", "18px")  
+  .style("font-size", "28px")  
   .text("Heat Extremes in USA");
   
   // SPECIFY PROJECTION
@@ -34,6 +36,7 @@ const width = window.innerWidth * 0.9,
   const pathGen = d3.geoPath(projection)
 
     // APPEND GEOJSON PATH  
+    // OUTLINE US MAP
   const states = svg.selectAll("path.states")
     .data(geojson.features)
     .join("path")
@@ -42,7 +45,7 @@ const width = window.innerWidth * 0.9,
     .attr("fill", "lightblue")
     .attr("stroke", "black")
     
-  // APPEND DATA AS SHAPE
+  // APPEND DATA AND ADD SHAPES
   const heats = svg.selectAll("circle.heats")
   .data(heat)
   .join("circle")
