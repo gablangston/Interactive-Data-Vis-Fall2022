@@ -1,13 +1,10 @@
 Chart 1: Map of School Locations FY2020 in NYC Boroughs
-// Having difficulty illustrating school locations in the Bronx, Queens and Staten Island
-// Locations are visible for Brooklyn and Manhattan
-// Is it the GeoJson file?
+Having difficulty illustrating school locations in the Bronx, Queens and Staten Island
+Locations are visible for Brooklyn and Manhattan
+Is it the GeoJson file?
 
-Charts 2 and 3:
 
-// In progress of adding a tooltip to both charts.
-
-// For chart 2:
+For chart 2:
 Count of School Zone Speeding Violations in 2020
 Bronx - 587,110
 Brooklyn - 1,379,780
@@ -15,7 +12,8 @@ Manhattan - 237,670
 Queens - 1,320,058
 Staten Island - 284,877
 
-// For Chart 3:
+For Chart 3:
+Having difficulty adjusting the x-scale to be the proper range. Values are below:
 Median Income per Borough in 2020 (in dollars)
 Bronx - $43,011
 Brooklyn - $67,567
