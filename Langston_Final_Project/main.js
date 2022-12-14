@@ -16,7 +16,7 @@ Promise.all([
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-    .style("background-color", "AntiqueWhite");
+    .style("background-color", "PeachPuff");
 
     // SPECIFY PROJECTION - ALBERS
     const projection = d3.geoAlbersUsa()
@@ -48,9 +48,9 @@ Promise.all([
     // CHART LABELS
     svg.append("text")
     .attr("x", width / 2)
-    .attr("y",margin.top)
-    .attr("text-anchor", "middle")
-    .style("font-size", "26px")
+    .attr("y", padding / 1.25)
+    .attr("text-anchor", "start")
+    .style("font-size", "22px")
     .text("School Locations in NYC");
 });
 
@@ -70,7 +70,7 @@ d3.csv('../data/borough_violations.csv', d3.autoType)
             .append("svg")
             .attr("width", width)
             .attr("height", height)
-            .style("background-color", "AntiqueWhite")
+            .style("background-color", "PeachPuff")
 
         const boros = dataset0.map(d => d.violation_borough)
 
@@ -116,7 +116,7 @@ d3.csv('../data/borough_violations.csv', d3.autoType)
             .attr("x", width / 2)
             .attr("y", padding / 1.25)
             .attr("text-anchor", "middle")
-            .style("font-size", "26px")
+            .style("font-size", "22px")
             .text("Speeding in School Zones Violations - Fiscal Year 2020");
 
         svg.append("text")
@@ -148,16 +148,18 @@ d3.csv('../data/median_income.csv', d3.autoType)
             .append("svg")
             .attr("width", width)
             .attr("height", height)
-            .style("background-color", "AntiqueWhite")
+            .style("background-color", "PeachPuff")
+            .style("overflow", "visible")
 
         const boroughs = dataset1.map(d => d.borough)
 
         /* ESTABLISH X AND Y SCALES */
 
         const xScale = d3.scaleLinear()
-            .domain(d3.extent(dataset1, d => d.median_income))
+            //.domain(d3.extent(dataset1, d => d.median_income))
+            .domain([0,Math.max(...dataset1.map(d=> d.median_income))])
             .range([padding * 2, width - padding])
-            .nice()
+            .nice();
             
         const yScale = d3.scaleBand()
             .domain(boroughs)
@@ -168,15 +170,21 @@ d3.csv('../data/median_income.csv', d3.autoType)
         const yAxis = d3.axisLeft(yScale);
 
         // CUSTOMIZE BARS
-        const bars = svg.selectAll("rect.bars")
+        svg.selectAll("rect.bar")
             .data(dataset1)
             .join("rect")
-            .attr("class", "bars")
-            .attr("y", d => yScale(d.borough))
-            .attr("x", padding * 2)
-            .attr("width", d => width - xScale(d.median_income) - padding * 1.5)
-            .attr("height", yScale.bandwidth())
+            .attr("class", "bar")
             .attr("fill", "green")
+            .attr("x", padding * 2)
+            .attr("y", d=>yScale(d.borough))
+            .attr("height",yScale.bandwidth())
+            .attr("width",d=>xScale(d.median_income));
+
+
+            //.attr("y", d => yScale(d.borough))
+            //.attr("x", padding * 2)
+            //.attr("width", d => width - xScale(d.median_income) - padding * 1.5)
+            //.attr("height", yScale.bandwidth())
 
         // DEVELOP AXES LINES
         svg.append("g")
@@ -194,7 +202,7 @@ d3.csv('../data/median_income.csv', d3.autoType)
             .attr("x", width / 2)
             .attr("y", padding / 1.25)
             .attr("text-anchor", "middle")
-            .style("font-size", "26px")
+            .style("font-size", "22px")
             .text("Median Income per Borough in 2020");
 
         svg.append("text")
