@@ -1,0 +1,20 @@
+Gabrielle Langston
+DATA 73200: Interactive Data Visualization
+Professor Ellie Frymire
+Project Sketches
+
+Initial Sketch:
+
+(NOTE: included in reflection document, not uploaded here.)
+
+The sketch below was created after the first ideation session. Back then, I knew I wanted to do a deep dive into speed cameras, but I hadn’t finalized my datasets, nor was I sure what questions I wanted to answer. However, given the research I did, I knew I wanted to have a storytelling/narrative approach. 
+
+From the start, I wanted the dashboard to include some text on the history of speed cameras as well as a map displaying something related to New York City.
+
+
+Final Sketch:
+(NOTE: included in reflection document, not uploaded here.)
+
+In the final sketch, I elected to keep the dashboard as well as the narrative / storytelling approach. Due to the limitations in acquiring the needed data, I now want the map to display school locations across Brooklyn. The first bar chart will display the top 5 precincts (in ascending order) with the most speeding in school zone violations. The second bar chart will illustrate a separate chart to the U.S. Census mode of transportation question for each of the top five precincts with the most speeding in school zone violations.
+  
+
