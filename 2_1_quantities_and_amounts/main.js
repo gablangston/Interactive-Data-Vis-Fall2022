@@ -36,6 +36,12 @@ d3.csv('../data/squirrelActivities.csv', d3.autoType)
 
     const xAxis = d3.axisBottom(xScale);
     const yAxis = d3.axisLeft(yScale);
+  
+  // UPDATED SECTION FOR PORTFOLIO - NOT IN ORIGINAL TUTORIAL.
+
+    const colorScale = d3.scaleOrdinal(d3.schemeCategory10)
+    .domain(["running", "chasing", "climbing", "eating", "foraging"])
+    .range(["#1f77b4", "#d62728", "#e377c2", "#bcbd22", "#17becf" ])
 
     /* HTML ELEMENTS */
     /** Select your container and append the visual elements to it */
@@ -45,7 +51,8 @@ d3.csv('../data/squirrelActivities.csv', d3.autoType)
     .data(data)
     .join("rect")
     .attr("class","bar")
-    .attr("fill", "green")
+    //.attr("fill", "green")
+    .attr("fill", d => colorScale (d.activity))
     .attr("x",margin)
     .attr("y", d=>yScale(d.activity))
     .attr("height",yScale.bandwidth())
