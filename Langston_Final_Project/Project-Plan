@@ -1,0 +1,58 @@
+Gabrielle Langston
+DATA 73200: Interactive Data Visualization
+Professor Ellie Frymire
+Final Project Plan
+
+
+Project Abstract:
+
+Speed cameras have been a hot topic issue in New York City for years, causing tensions and resentment from commuters all alike. In 2022, Streetsblog performed two analyses with some disturbing results. The first found that camera placement is equitable while street designs remain inequitable, while the second found there is elevated danger in school zones, especially during school days. These results prompted me to learn more about the placement of speed cameras in school cameras. Due to the FOIL (Freedom of Information Law), there is no public data on the geographic location of speed cameras, but existing datasets on the NYC Open Data portal allow us to navigate around this obstacle for the time-being. Using the Open Parking and Camera Violations and 2019 - 2020 School Locations via the NYC Open Data portal, as well as the 2020 American Community Survey DPO3 Selected Economic Characteristics, I plan to answer where schools are located in Brooklyn, which top 5 precincts had the most violations related to speeding in a school zone in 2020, how many schools are in the top 5 precincts and the median income in the top 5 precincts.         
+
+
+Final Sketches:
+
+The top section will feature text summarizing the history of speed cameras in NYC, as well as the differing views on the installation of the cameras. The text will be accompanied by a map of school locations across Brooklyn, with accompanying text explaining that as part of the legislation, speed cameras must be within 1320 feet of a school entrance or exit.
+
+The first bar chart will display the top 5 precincts (in ascending order) with the most speeding in school zone violations. The second bar chart will illustrate a separate chart to the U.S. Census mode of transportation question for each of the top five precincts with the most speeding in school zone violations.
+
+
+
+Proposed Site Architecture:
+
+{Text on history of speed cameras, advocacy, legislation}
+
+
+{Requirements for map of Brooklyn school locations}
+Create svgs and specify projection
+Define path function and outline GeoJSON of Brooklyn
+Append data and add circle shapes to represent school locations
+
+{Requirements for vertical bar chart} - top 5 precincts with violations
+
+Append svgs: width, height, style, scales (define from data to pixel space)
+Ascending order for bars (color, size, using svgs)
+
+{Requirements for horizontal bar chart} - median income breakdown of top 5 precincts 
+Append svgs: width, height, style, scales (define from data to pixel space)
+Ascending order for bars (color, size, using svgs)
+Repeat for each of the five top precincts 
+
+
+List of Data Sources and Citations
+
+
+
+
+
+
+Data Sources and Plan for Analysis:
+
+I plan to use three data sources: 
+Open Parking and Camera Violations dataset via the NYC Open Data Portal
+Filter by:  1) Year → 2020, 2) County → Kings and 3) Violation → “PHTO SCHOOL ZN SPEED VIOLATION” 
+2019 - 2020 School Locations via the NYC Open Data Portal
+Filter by: 1) NTA → contains “BK” and 2) Fiscal_year → 2020
+2020 American Community Survey DPO3 Selected Economic Characteristics via the U.S. Census Bureau 
+Filter by: 1) Year → 2020, 2) County → Kings County and 3) Census Tracts → within Kings County
+The Open Parking and Camera Violations and 2019 - 2020 School Locations datasets are connected by the police precincts, known as precinct and Police_precinct respectively. Furthermore, the 2019 - 2020 School Locations and the 2020 ACS: Selected Economic Characteristics datasets are connected through the census tracts.
+
