@@ -1,0 +1,20 @@
+Gabrielle Langston
+DATA 732000 - Interactive Data Visualization
+Professor Ellie Frymire
+Final Project Prospectus
+11/15/2022
+
+
+Below are my notes from the ideation class session:
+
+Phase 1 - Ideate:
+
+City-level research using traffic light data and street design
+I would like to visualize the distribution of speed cameras across the city (maybe just a few select neighborhoods in Brooklyn? i.e. Neighborhoods where I’ve lived / visited). The installation of speed cameras is controversial, and commuters from all sectors of the City have an opinion on whether speed cameras hinder speeding or is a unnecessary tax. Either way, I want to display my visualizations in a way that is partisan, if possible, and respectful of all views. 
+Education and income level → state testing
+Recently test scores for the SHSAT and state standardized exams were revealed and it seems that students overall did not perform well. Is there a way to visualize education data at a zip code level? By race/ethnicity? My biggest concern is how accurate the data is in light of COVID-19 and the ongoing digital divide.
+
+Phase 2: Develop
+
+I decided to pursue the first idea because it would allow me to utilize more datasets, even though it may be more difficult to match this data to the census data. In the follow up conversation with my groupmates, I reiterated the need to create a visualization that was as unbiased as possible and presented all views in relation to speed cameras. It was at this moment (and with encouragement from my groupmates) that I decided to use the storytelling method as a dashboard design may be challenging (I may change my mind on this though!). In terms of the data, there are a couple of possibilities to tie it to census data — there is demographic analysis of transit usage, as well as census tracts. As part of the storytelling, I would like to address various street designs and whether tickets are given out disproportionately in low-income areas.         
+
