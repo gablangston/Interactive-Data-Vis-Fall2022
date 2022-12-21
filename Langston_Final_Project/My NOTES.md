@@ -1,3 +1,5 @@
+NOTE: all data sources are located in a separate folder: "Data."
+
 Chart 1: Map of School Locations FY2020 in NYC Boroughs
 Having difficulty illustrating school locations in the Bronx, Queens and Staten Island
 Locations are visible for Brooklyn and Manhattan
